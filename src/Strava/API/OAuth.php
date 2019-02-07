@@ -30,6 +30,14 @@ class OAuth extends AbstractProvider
     }
 
     /**
+     * @see AbstractProvider::urlAuthorize
+     */
+    public function urlDeauthorize()
+    {
+        return 'https://www.strava.com/oauth/deauthorize';
+    }
+
+    /**
      * @see AbstractProvider::urlAccessToken
      */
     public function urlAccessToken()
