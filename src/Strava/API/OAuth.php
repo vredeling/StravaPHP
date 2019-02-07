@@ -18,7 +18,7 @@ class OAuth extends AbstractProvider
 {
     use BearerAuthorizationTrait;
 
-    public $scopes = ['write'];
+    public $scopes = ['activity:write', 'profile:write'];
     public $responseType = 'json';
 
     /**
